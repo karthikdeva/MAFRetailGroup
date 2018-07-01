@@ -1,0 +1,23 @@
+.app-header {
+    margin: 1.875em 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .searchbox-wrapper {
+    background: #f0f7fe;
+    padding: 0 18px;
+    height: 40px;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    color: #000;
+    font-size: 14px;
+  
+    .material-icons {
+      color: #1761a6;
+      cursor: pointer;
+    }
+  }
+  

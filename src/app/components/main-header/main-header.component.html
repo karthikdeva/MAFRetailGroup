@@ -1,0 +1,13 @@
+<header class="app-header">
+  <a href="" title="MAF Retail group">
+    <img src="../assets/images/brand-logo.png" alt="MAF Retail group" />
+  </a>
+  <div class="searchbox-wrapper">
+    <mat-form-field *ngIf="showSearchBox">
+      <input matInput type="text" class="form-input" placeholder="Search Product" />
+    </mat-form-field>
+    <i class="material-icons" (click)="toggleSearch()">
+      search
+    </i>
+  </div>
+</header>

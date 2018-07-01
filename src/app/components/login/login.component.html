@@ -1,0 +1,21 @@
+<section class="login-form-wrapper">
+  <header class="form-header">
+    <h1 class="title">Sign In Now</h1>
+    <label> Unlock awesome features!</label>
+  </header>
+  <form [formGroup]="loginForm" class="login-form">
+    <mat-form-field class="full-width form-row">
+      <mat-error class="field-error" *ngIf="loginForm.get('username').invalid && loginForm.get('username').touched">Required field</mat-error>
+      <input matInput type="text" class="form-input" formControlName="username" placeholder="username" required/>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-error class="field-error" *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched">Required field</mat-error>
+      <input matInput type="password" class="form-input" formControlName="password" placeholder="password" required/>
+    </mat-form-field>
+    <div class="login-settings">
+      <mat-checkbox color="primary">Keep me logged in</mat-checkbox>
+      <a href="#">Forgot password?</a>
+    </div>
+    <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="loginForm.invalid">SIGN IN</button>
+  </form>
+</section>

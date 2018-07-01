@@ -1,0 +1,77 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/grid';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+
+  .mat-form-field-label-wrapper {
+    left: 1.5em !important;
+    top: -.1em !important;
+    padding: 0;
+  }
+
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
+  top: -12px;
+  right: 0;
+  width: auto;
+}
+
+.searchbox-wrapper {
+  .mat-form-field-infix {
+    border: none;
+    max-width: 140px;
+  }
+
+}
+
+.mat-form-field-underline {
+  display: none;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.login-from {
+  .mat-form-field-appearance-legacy .mat-form-field-label {
+    top: 2em;
+    left: 1.125em;
+  }
+
+  input[type=text]:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+
+}
+@media (max-width: 800px) {
+  .page {
+    padding: 0 15px;
+  }
+}
